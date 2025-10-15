@@ -44,7 +44,7 @@ Para casos controlados y cercanos a condiciones ideales, la función presenta un
 1. **monedas2.webp**    
 En este primer caso, la detección de umbral automática por el método Otsu falla, por lo que se establece el valor 210 de forma manual. Con este simple cambio, se obtiene un resultado perfecto.    
 
-![plot](./Resultados/monedas2.jpg)
+![plot](./Resultados/monedas2.webp)
 
 2. **monedas3.jpg**     
 En este caso no es necesario hacer ningún ajuste manual y la detección automática Otsu funciona correctamente, obteniendo un resultado perfecto incluso cuando las monedas presentan una ligera sombra que el borde reconoce como parte de la moneda.
