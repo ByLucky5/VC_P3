@@ -15,7 +15,7 @@ Tras la detección de contornos, se recorre el array de resultados, filtrando po
 
 Finalmente, se procesa ésta primera imagen, recorriendo nuevamente el array de los contornos y comparando el valor del radio con el almacenado anteriormente. Dado que se trata de la misma imagen, la coincidencia debe ser perfecta.
 
-Finalmente, se muestra por pantalla el valor total calculado, siendo el de todas las monedas 3.88€.
+Se muestra por pantalla el valor total calculado, siendo el de todas las monedas 3.88€.
 
 Para una visualización clara de los cálculos del algoritmo, se muestra por pantalla, además, la imagen original con los bordes y valor de la moneda calculados, además de la imagen umbralizada a su lado.
 
