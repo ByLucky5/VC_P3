@@ -19,7 +19,7 @@ Finalmente, se muestra por pantalla el valor total calculado, siendo el de todas
 
 Para una visualización clara de los cálculos del algoritmo, se muestra por pantalla, además, la imagen original con los bordes y valor de la moneda calculados, además de la imagen umbralizada a su lado.
 
-![plot](./MonedasRes.jpg)
+![plot](./Resultados/Monedas.jpg)
 
 Una vez realizado este ejemplo, se pueden usar las medidas y valores obtenidos de la imagen "ideal" para obtener los resultados de las demás imágenes.
 
@@ -44,20 +44,20 @@ Para casos controlados y cercanos a condiciones ideales, la función presenta un
 1. **monedas2.webp**    
 En este primer caso, la detección de umbral automática por el método Otsu falla, por lo que se establece el valor 210 de forma manual. Con este simple cambio, se obtiene un resultado perfecto.    
 
-![plot](./monedas2Res.jpg)
+![plot](./Resultados/monedas2.jpg)
 
 2. **monedas3.jpg**     
 En este caso no es necesario hacer ningún ajuste manual y la detección automática Otsu funciona correctamente, obteniendo un resultado perfecto incluso cuando las monedas presentan una ligera sombra que el borde reconoce como parte de la moneda.
 
-![plot](./monedas3Res.jpg)
+![plot](./Resultados/monedas3.jpg)
 
 3. **monedas6.jpg**     
 Para este caso, se mantiene la detección automática de umbral, aunque se debe usar el umbral no invertido dado que el fondo de la imagen es negro. Esta imagen permite comprobar que la función es capaz de detectar monedas repetidas, y soportar la detección errónea de bordes internos. A pesar de que algunos números no se puedan distinguir en la imagen resultante, se puede ver que el valor total calculado es correcto, siendo de 7,76€.
 
-![plot](./monedas6Res.jpg)
+![plot](./Resultados/monedas6.jpg)
 
 4. **monedas4.jpg** y **monedasJuntas.jpg**     
 Lamentablemente, dado que este método se basa en la detección de bordes exteriores, falla en el momento en el que hay monedas juntas o superpuestas, al no ser capaz de diferenciarlas. Dado que el método asume que la mayor figura es la moneda de 2€, un error en la detección de dicha moneda, provoca un fallo completo en todo el proceso.
 
-![plot](./monedas4Res.jpg)
-![plot](./monedasjuntasRes.jpg)
+![plot](./Resultados/monedas4.jpg)
+![plot](./Resultados/monedasjuntas.jpg)
