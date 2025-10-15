@@ -7,7 +7,7 @@ Práctica realizada por el grupo 15 (Lucía Motas Guedes y Raúl Marrero Maricha
 Para esta primera tarea, se realiza el reconocimiento de monedas de euros y céntimos de varias imágenes. Para ello, se hace uso de los métodos mostrados en la propia práctica, basando el reconocimiento en el tamaño de las monedas.
 
 ## Caso de ejemplo y calibración
-Para el primer caso de ejemplo con imagen ideal _[Monedas.jpg](./Monedas.jpg)_ proporcionada para la práctica, se comienza convirtiendo la imagen original a escala de grises, con su posterior umbralizado invertido (dado el fondo blanco de la imagen) con un umbral establecido de manera manual, siendo 200 en este caso.
+Para el primer caso de ejemplo con imagen ideal _[Monedas.jpg](./Test/Monedas.jpg)_ proporcionada para la práctica, se comienza convirtiendo la imagen original a escala de grises, con su posterior umbralizado invertido (dado el fondo blanco de la imagen) con un umbral establecido de manera manual, siendo 200 en este caso.
 
 Dado que las imágenes de las monedas pueden estar rotadas en posteriores imágenes o presentar leves deformaciones, se opta por hacer una búsqueda de los contornos externos con la función `cv2.cvtColor`, en lugar de la alternativa de la Transformada de Hough propuesta por la práctica.
 
