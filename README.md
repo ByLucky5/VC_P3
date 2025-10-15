@@ -64,16 +64,15 @@ Lamentablemente, dado que este método se basa en la detección de bordes exteri
 
 # Tarea clasificación de microplásticos
 
-En esta segunda parte de la práctica, se lleva a cabo la clasificación automática de microplásticos.  
-El objetivo es identificar tres tipos de partículas: **fragmentos**, **pellets** y **alquitrán**, aplicando técnicas de procesamiento de imagen y análisis de características básicas como **forma y color**.
+En esta segunda parte de la práctica, se lleva a cabo la clasificación automática de microplásticos. El objetivo es identificar tres tipos de partículas: **fragmentos**, **pellets** y **alquitrán**, aplicando técnicas de procesamiento de imagen y análisis de características básicas como **forma y color**.
 
 ## Preprocesado de imágenes
 
-Para cada una de las imágenes de referencia (_fragmentos_, _pellets_ y _alquitrán_), se realiza un preprocesamiento con el fin de mejorar la segmentación posterior.  
+Para cada una de las imágenes de referencia (_[fragment-03-olympus-10-01-2020.jpg](./fragment-03-olympus-10-01-2020.jpg)_, _[pellet-03-olympus-10-01-2020.jpg](./pellet-03-olympus-10-01-2020.jpg)_ y _[tar-03-olympus-10-01-2020.jpg](./tar-03-olympus-10-01-2020.jpg)_), se realiza un preprocesamiento con el fin de mejorar la segmentación posterior.  
 El proceso incluye conversión a escala de grises, normalización del contraste y suavizado mediante filtro gaussiano.  
 Estas operaciones se implementan dentro de la función `preprocesar_imagen`, que devuelve una imagen suavizada y normalizada.
 
-Además, se define una función `recortar_imagen` para trabajar solo sobre las regiones de interés de las muestras, eliminando zonas no relevantes.
+Además, se define una función `recortar_imagen` para trabajar solo sobre las regiones de interés de las muestras, descartando zonas que no contengan microplásticos.
 
 Las imágenes cargadas se muestran y guardan en la carpeta `./Resultados/`:
 
@@ -128,6 +127,7 @@ Posteriormente, se clasifica cada partícula detectada en la imagen de test en f
 - Formas irregulares → **Fragmentos**  
 
 Resultado de la clasificación: 'fragmentos': 98, 'pellets': 53, 'alquitran': 13
+De esta forma, consideramos que tenemos un resultado razonable y proseguimos con la obtención de las coordenadas.
 
 ## Obtención de coordenadas de predicciones
 
