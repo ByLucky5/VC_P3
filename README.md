@@ -61,3 +61,5 @@ Lamentablemente, dado que este método se basa en la detección de bordes exteri
 
 ![plot](./Resultados/monedas4.jpg)
 ![plot](./Resultados/monedasjuntas.jpg)
+
+# Tarea clasificación de microplásticos
