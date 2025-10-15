@@ -141,6 +141,8 @@ El resultado final es una lista de predicciones con coordenadas y etiquetas.
 Se leen las **anotaciones reales** del archivo _MPs_test_bbs.csv_ y se comparan visualmente con las predicciones generadas.  
 Para ello, se utiliza la función `dibujar_cajas`, que traza los rectángulos y etiquetas sobre las imágenes:
 
+|  |  |
+|-------------------|----------------------|
 | ![plot](./Resultados/Anotaciones%20reales.jpg) | ![plot](./Resultados/Clasificación%20predicha.jpg) |
 
 ## Matriz de confusión y métricas
